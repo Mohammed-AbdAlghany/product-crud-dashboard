@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>product-crud-dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>CRUD</h2>
+            <p>PRODUCT MANAGMENT SYSTEM</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="title" placeholder="title" >
+            <div class="price">
+                <input type="number" id="price" placeholder="price">
+                <input type="number" id="taxes" placeholder="taxes">
+                <input type="number" id="ads" placeholder="ads">
+                <input type="number" id="discount" placeholder="discount">
+                <small id="total">0</small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="create">create</button>
+        </div>
+        <div class="output">
+            <input type="search" name="" id="search" placeholder="search">
+            <div class="search">
+                <button id="button">Search By Title</button>
+                <button id="button">Search By Category</button>
+            </div>
+            <div id="deleteAll"></div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>TTILE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>COUNT</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
