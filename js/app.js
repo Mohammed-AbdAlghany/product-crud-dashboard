@@ -31,10 +31,8 @@ function createProduct(){
         count:count.value,
         category:category.value
     }
-    if (title.value!=""&&price.value!=""&&taxes.value!=""&&ads.value!="&&"&&discount.value!=""&&total.innerHTML!=""&&count.value!=""&&category.value!="") {
-        date.push(info)
-        localStorage.setItem("product",JSON.stringify(date))  
-}
+    date.push(info)
+    localStorage.setItem("product",JSON.stringify(date))  
 }
 
 create.onclick=createProduct
